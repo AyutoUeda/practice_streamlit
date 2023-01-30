@@ -44,7 +44,7 @@ def strip_ansi_escape_codes(s):
     ansi_escape = re.compile(r'\x1b[^m]*m')
     return ansi_escape.sub('', s)
 
-
+""""
 @dataclass
 class YoutubeItemData:
     title: str
@@ -59,7 +59,7 @@ def progress_float_formatter(hookdata, current_num=1, total_num=1):
         return 1
     else:
         return progress
-
+"""
 
 def get_split_audio(config: SpleeterSettings,
                     audio_file: Path,

@@ -15,8 +15,6 @@ from utils import (ProcessingMode, SpleeterMode, SpleeterSettings,
 UPLOAD_DIR = Path("./upload_files/")
 OUTPUT_DIR = Path("./output/")
 
-if 'is_youtube_downloading' not in st.session_state:
-    st.session_state.is_youtube_downloading = False
 if 'audio_files' not in st.session_state:
     st.session_state.audio_files = []
 if 'output_files' not in st.session_state:
