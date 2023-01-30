@@ -44,22 +44,6 @@ def strip_ansi_escape_codes(s):
     ansi_escape = re.compile(r'\x1b[^m]*m')
     return ansi_escape.sub('', s)
 
-""""
-@dataclass
-class YoutubeItemData:
-    title: str
-    url: str
-
-
-def progress_float_formatter(hookdata, current_num=1, total_num=1):
-    progress = (youtube_dl_percent_str_to_float(
-        hookdata["_percent_str"])+100*(current_num-1))/(total_num*100)
-
-    if progress > 1.0:
-        return 1
-    else:
-        return progress
-"""
 
 def get_split_audio(config: SpleeterSettings,
                     audio_file: Path,
