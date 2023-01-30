@@ -5,6 +5,7 @@ import matplotlib
 import librosa
 from librosa import display
 import streamlit as st
+import click
 from spleeter.separator import Codec
 import matplotlib.pyplot as plt
 
