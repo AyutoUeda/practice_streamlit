@@ -1,12 +1,12 @@
 import os
 from pathlib import Path
 from typing import Generator, List
+import matplotlib
 import librosa
 from librosa import display
 import streamlit as st
 from spleeter.separator import Codec
 import matplotlib.pyplot as plt
-import matplotlib
 
 from utils import (ProcessingMode, SpleeterMode, SpleeterSettings,
                    get_split_audio)
