@@ -5,6 +5,7 @@ import matplotlib
 import librosa
 from librosa import display
 import streamlit as st
+import streamlit.components.v1 as stc
 import click
 from spleeter.separator import Codec
 import matplotlib.pyplot as plt
@@ -113,8 +114,9 @@ if(current_mode == ProcessingMode.SINGLE):
 
             for i, audio_file in enumerate(st.session_state.output_files):
                 st.caption(audio_file.name)
-                wav, sr = librosa.load(audio_file)
-                fig, ax = plt.subplots()
-                librosa.display.waveplot(wav, sr=sr, x_axis="time", ax=ax)
                 st.audio(str(audio_file))
-                st.pyplot(fig)
+
+                # wav, sr = librosa.load(audio_file)
+                # fig, ax = plt.subplots()
+                # librosa.display.waveplot(wav, sr=sr, x_axis="time", ax=ax)
+                # st.pyplot(fig)
