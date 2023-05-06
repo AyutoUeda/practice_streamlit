@@ -1,0 +1,6 @@
+Dockerfile
+__pycache__/
+output/
+pretrained_models/
+uploads_files/
+memo.txt
