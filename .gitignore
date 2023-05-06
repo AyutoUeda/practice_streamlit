@@ -1,7 +1,0 @@
-.gitignore
-Dockerfile
-__pycache__/
-output/
-pretrained_models/
-upload_files/
-memo.txt
