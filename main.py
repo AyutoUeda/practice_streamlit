@@ -1,14 +1,14 @@
 import os
 from pathlib import Path
 from typing import Generator, List
-import matplotlib
-import librosa
-from librosa import display
+#import matplotlib
+#import librosa
+#from librosa import display
 import streamlit as st
 import streamlit.components.v1 as stc
 import click
 from spleeter.separator import Codec
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 from utils import (ProcessingMode, SpleeterMode, SpleeterSettings,
                    get_split_audio)
