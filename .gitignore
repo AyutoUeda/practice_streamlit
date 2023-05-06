@@ -1,6 +1,7 @@
+.gitignore
 Dockerfile
 __pycache__/
 output/
 pretrained_models/
-uploads_files/
+upload_files/
 memo.txt
