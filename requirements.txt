@@ -4,3 +4,6 @@ pathlib
 typing
 click
 ffmpeg-python
+pandas
+numpy
+matplotlib
