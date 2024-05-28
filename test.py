@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 
 st.title('My firs')
 st.caption("this is the caption")
@@ -9,6 +11,23 @@ print("aaa")
 '''
 
 st.code(python_code, language="python")
+
+
+st.write(1235)
+
+df = pd.DataFrame(
+    [1,2,3],
+    [4,5,6]
+)
+st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
+
+st.markdown('''
+            - a
+            - b
+            
+            '''
+            )
+st.caption("abc")
 
 with st.form(key="profile_form"):
     # text box
@@ -32,7 +51,7 @@ with st.form(key="profile_form"):
     # print(f"submit_btn:{submit_btn}")
     # print(f"cancel_btn:{cancel_btn}")
     
-    print(type(hobby))
+    # print(type(hobby))
 
     if submit_btn:
         st.text("ようこそ, {}!{}に書類を発送しました".format(name, address))
